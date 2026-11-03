@@ -1,0 +1,38 @@
+.{
+    .name = .openocd,
+    .version = "0.13.0-dev",
+    .minimum_zig_version = "0.17.0",
+    .fingerprint = 0x261f8786ca9e570b,
+    .dependencies = .{
+        .upstream = .{
+            .url = "git+https://github.com/openocd-org/openocd#1f68633948d6503dbb32015583119c02801eab73",
+            .hash = "N-V-__8AAEhN8QBgYVtl2ZQiGK5LKE5CjAhptgHmaTOoJPVS",
+        },
+        .capstone = .{
+            .url = "git+https://github.com/allyourcodebase/capstone.git#3769b1ec041b7c38813b9f7780946dc4dda3723e",
+            .hash = "capstone-6.0.0-Alpha11-tmNUgchCAADseBl0X3r-1OeBGnnCh81Mzef9IVsyDBZ6",
+        },
+        .libusb = .{
+            .url = "git+https://github.com/allyourcodebase/libusb#5c2dc368e90ec27a3300e9ceba3935f822a1299b",
+            .hash = "libusb-0.0.1-P02YQpOOFwBm-tD_-xOj5eVK-dlEJZ-ukpMyDGkslb9t",
+        },
+        .jimtcl = .{
+            .url = "git+https://github.com/allyourcodebase/jimtcl#15e6ffe2d041782ecf6a4cd5cf70221c7511c5af",
+            .hash = "jimtcl-0.84.0-JR7RgMWFAQBB8Lm6w36SnixmFj0UHC7HEXdkm3xoWdiI",
+        },
+        .hidapi = .{
+            .url = "git+https://github.com/allyourcodebase/hidapi#d65fcae8f18a3b18b3e89c83f5aee1ac9301d0e1",
+            .hash = "hidapi-0.16.0-8tiPw2oTAABHJ4_df5EfIxOylx0-fNLP1yXoB-bn-4ad",
+        },
+        .libjaylink = .{
+            .url = "git+https://github.com/allyourcodebase/libjaylink#3442e095aeca19ab8f904e61ebd7a62ed63261f4",
+            .hash = "libjaylink-0.2.0-c2c4bb0-B0QG3DsTAABYVEMFtDhKor2bROrPh5qhJLrxhBIgMkh7",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        "LICENSE",
+    },
+}
